@@ -7,6 +7,7 @@
  Get-ChildItem | ?{ $_.PSIsContainer } |  ForEach-Object {
     cd $_.FullName
 
+    git remote set-url origin ssh://git@github.com/DamienBAus/$_.git
     git add --all .
     git commit -m "$_.Name $date"
     git push
