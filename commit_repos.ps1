@@ -1,4 +1,12 @@
-﻿ #This file moves to my GitHub directory and updates all of my repositories. It is executed by an Automated Task #
+﻿ # Author: Damien Beard, @DamienBAus
+ #
+ # This file moves to my GitHub directory and updates all of my repositories. 
+ # It is executed by an Automated Task using the following command:
+ #
+ # Powershell.exe -File C:\Users\$name\Documents\GitHub\GitHub-Automation-with-PowerShell\commit_repos.ps1
+ #
+ # Where $name is the name of the user running the script. Don't forget to change variables below to your
+ # repository location/GitHub username!
  
  $date = Get-Date
  $name = [Environment]::UserName
