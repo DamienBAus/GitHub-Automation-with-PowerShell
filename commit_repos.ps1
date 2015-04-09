@@ -1,4 +1,4 @@
-﻿ #This file moves to my GitHub directory and updates all of my repositories. It is executed 
+﻿ #This file moves to my GitHub directory and updates all of my repositories. It is executed by an Automated Task #
  
  $date = Get-Date
  
