@@ -12,6 +12,6 @@ The environment can be a bit fiddly to set-up, but once it's there, it really wo
 
 Also, you will have to tweak the paramters in the script for your setup (ie location of GitHub repository and GitHub Username).
 
-The Automatic Task that I run uses the following commant to execute (where $name is the name of the user running the script):
+The Scheduled Task that I run uses the following commant to execute (where $name is the name of the user running the script):
 
 Powershell.exe -File C:\Users\$name\Documents\GitHub\GitHub-Automation-with-PowerShell\commit_repos.ps1
