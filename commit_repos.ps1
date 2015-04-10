@@ -18,7 +18,11 @@
     cd $_.FullName
 
     git remote set-url origin ssh://git@github.com/$gitHubUserName/$_.git
+    git fetch
+    git pull
+    git update
     git add --all .
     git commit -m "$_.Name $date"
     git push
+    git update
     }
