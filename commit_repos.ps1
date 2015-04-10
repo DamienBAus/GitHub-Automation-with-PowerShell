@@ -1,7 +1,7 @@
 ﻿ # Author: Damien Beard, @DamienBAus
  #
  # This file moves to my GitHub directory and updates all of my repositories. 
- # It is executed by an Automated Task using the following command:
+ # It is executed by an Scheduled Task using the following command:
  #
  # Powershell.exe -File C:\Users\$name\Documents\GitHub\GitHub-Automation-with-PowerShell\commit_repos.ps1
  #
@@ -12,7 +12,7 @@
  $name = [Environment]::UserName
  $gitHubUserName = "DamienBAus" # Change this line to match your GitHub Username #
 
- cd "C:\Users\$name\Documents\GitHub"
+ cd "C:\Users\$name\Documents\GitHub" # Change this line to match your GitHub repository location #
  
  Get-ChildItem | ?{ $_.PSIsContainer } |  ForEach-Object {
     cd $_.FullName
@@ -22,5 +22,3 @@
     git commit -m "$_.Name $date"
     git push
     }
-
-Write-Host "Task Completed"
